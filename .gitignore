@@ -1,0 +1,10 @@
+# Ignore local data assets
+*.csv
+
+# Ignore pre-trained heavy model binaries
+*.pkl
+
+# Ignore hidden python workspace caches
+__pycache__/
+.ipynb_checkpoints/
+.streamlit/
