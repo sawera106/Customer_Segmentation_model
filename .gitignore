@@ -2,7 +2,7 @@
 *.csv
 
 # Ignore pre-trained heavy model binaries
-*.pkl
+# *.pkl
 
 # Ignore hidden python workspace caches
 __pycache__/

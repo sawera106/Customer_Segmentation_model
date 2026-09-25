@@ -1,9 +1,11 @@
 import streamlit as st
 import joblib as jb
+import os
 import pandas as pd
 import numpy as np
-scaler = jb.load('scaler.pkl')
-model = jb.load('customer_segmentation_model.pkl')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+scaler = jb.load(os.path.join(BASE_DIR, 'scaler.pkl'))
+model = jb.load(os.path.join(BASE_DIR, 'customer_segmentation_model.pkl'))
 
 st.title("AI Customer Segmentation Prediction")
 st.warning("This is a simple AI model that predicts customer segments based on Annual Income and Spending Score. Please enter the required information below to get the predicted segment.")
